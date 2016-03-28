@@ -2,7 +2,7 @@ Summary:	GEdit plugin providing code assistance support
 Summary(pl.UTF-8):	Wtyczka GEdita udostępniająca wsparcie pracy z kodem
 Name:		gedit-code-assistance
 Version:	3.16.0
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		X11/Applications/Editors
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gedit-code-assistance/3.16/%{name}-%{version}.tar.xz
@@ -43,6 +43,9 @@ Summary:	Vala API for GEdit Code Assistance
 Summary(pl.UTF-8):	API języka Vala do funkcji GEdit Code Assistance
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description -n vala-gedit-code-assistance
 Vala API for GEdit Code Assistance.

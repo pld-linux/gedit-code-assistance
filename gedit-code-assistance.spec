@@ -43,9 +43,7 @@ Summary:	Vala API for GEdit Code Assistance
 Summary(pl.UTF-8):	API języka Vala do funkcji GEdit Code Assistance
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description -n vala-gedit-code-assistance
 Vala API for GEdit Code Assistance.
